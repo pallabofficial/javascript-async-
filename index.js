@@ -14,11 +14,15 @@ function changeBgColor() {
 let interval;
 
 startButton.addEventListener("click", function() {
-    interval = setInterval(changeBgColor, 2000);
+    if(!interval){
+        interval = setInterval(changeBgColor, 500);
+    }
+    
 });
 
 stopButton.addEventListener("click", function() {
     clearInterval(interval);
+    interval = null;
 });
 
 
