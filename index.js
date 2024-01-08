@@ -5,7 +5,7 @@ function randomNumber() {
     return Math.floor(Math.random() * 255);
 }
 
-// let body = document.querySelector("body");
+
 
 function changeBgColor() {
     document.querySelector("body").style.backgroundColor = `rgb(${randomNumber()}, ${255 - randomNumber()}, ${255 - randomNumber()})`;
@@ -24,6 +24,10 @@ stopButton.addEventListener("click", function() {
     clearInterval(interval);
     interval = null;
 });
+
+
+
+
 
 
 
